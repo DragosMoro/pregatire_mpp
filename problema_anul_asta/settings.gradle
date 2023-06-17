@@ -1,0 +1,5 @@
+rootProject.name = 'problema_anul_asta'
+include 'Model'
+include 'Persistence'
+include 'RestServices'
+

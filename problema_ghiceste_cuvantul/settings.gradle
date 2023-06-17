@@ -1,0 +1,9 @@
+rootProject.name = 'problema_ghiceste_cuvantul'
+include 'Model'
+include 'Persistence'
+include 'Services'
+include 'Server'
+include 'Client'
+include 'Networking'
+include 'RestServices'
+
