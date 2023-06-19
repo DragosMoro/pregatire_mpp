@@ -1,0 +1,9 @@
+rootProject.name = 'Joc1'
+include 'Server'
+include 'Services'
+include 'Networking'
+include 'Model'
+include 'Persistence'
+include 'Client'
+include 'Rest'
+

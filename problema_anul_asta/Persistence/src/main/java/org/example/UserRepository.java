@@ -3,6 +3,7 @@ package org.example;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import java.sql.Connection;
@@ -18,7 +19,7 @@ public class UserRepository implements IUserRepository<Integer, User>{
     private JdbcUtils dbUtils;
 
     @Autowired
-    public UserRepository(Properties props) {
+    public UserRepository(@Qualifier("dbProperties")Properties props) {
         logger.info("Initializing Repository with properties: {} ",props);
         dbUtils=new JdbcUtils(props);
     }

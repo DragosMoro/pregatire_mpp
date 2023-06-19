@@ -2,6 +2,7 @@ package org.example;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 import java.util.Properties;
 
@@ -14,6 +15,7 @@ public class AppConfig {
         return new JdbcUtils(props);
     }
     @Bean
+    @Primary
     public Properties dbProperties() {
         Properties props = new Properties();
         props.setProperty("jdbc.url","jdbc:sqlite:game.db");

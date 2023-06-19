@@ -1,0 +1,5 @@
+package networking.rpcprotocol;
+
+public enum RequestType {
+    SEND_NUMBER, SAVE_STATE, GAME_FINISHED, ADD_PLAYER, LOGIN, LOGOUT, GET_ALL_USERS, GET_PLAYER, GET_ACTIVE_USERS, REFRESH;
+};

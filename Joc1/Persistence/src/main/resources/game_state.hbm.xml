@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="model.GameState" table="game_states">
+        <id name="id" type="int" column="id">
+            <generator class="increment"/>
+        </id>
+        <property name="playerID" column="player_id" type="integer"/>
+        <property name="gameID" column="game_id" type="integer"/>
+        <property name="money" column="money" type="integer"/>
+        <property name="position" column="position" type="integer"/>
+    </class>
+</hibernate-mapping>

@@ -45,7 +45,6 @@ public class GameRepository implements IGameRepository<Integer, Game> {
                     game.setId(id);
                     games.add(game);
 
-
                 }
             }
 

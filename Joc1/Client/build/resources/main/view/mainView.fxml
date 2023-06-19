@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane fx:id="mainPain" dividerPositions="0.6390293225480282" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="595.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <items>
+        <AnchorPane fx:id="displayPane" minHeight="0.0" minWidth="0.0" prefHeight="501.0" prefWidth="383.0">
+         <children>
+            <Button fx:id="startButton" layoutX="125.0" layoutY="233.0" mnemonicParsing="false" onAction="#startGame" prefHeight="34.0" prefWidth="126.0" text="Start Game" />
+            <Label fx:id="status" alignment="CENTER" contentDisplay="CENTER" layoutX="39.0" layoutY="168.0" prefHeight="26.0" prefWidth="297.0" text="Enter in a session:" textAlignment="CENTER" />
+         </children></AnchorPane>
+        <AnchorPane fx:id="menu" minHeight="0.0" minWidth="0.0" prefHeight="501.0" prefWidth="220.0">
+            <children>
+            <VBox alignment="CENTER" layoutX="8.0" layoutY="14.0" prefHeight="500.8" prefWidth="212.0" spacing="50.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="userNameLabel" alignment="TOP_CENTER" prefHeight="22.0" prefWidth="166.0" text="Salut!" textAlignment="CENTER">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <!--
+                   <Button fx:id="addTest" mnemonicParsing="false" onAction="#addTestResults" prefHeight="28.0" prefWidth="126.0" text="Add Test" />
+                              -->
+                   <Button mnemonicParsing="false" onAction="#logout" text="Logout" />
+               </children>
+            </VBox>
+            </children>
+        </AnchorPane>
+    </items>
+</SplitPane>
