@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="org.example.Game" table="games">
+        <id name="id" type="java.lang.Integer" column="id">
+            <generator class="increment"/>
+        </id>
+        <property name="userId" column="user_id" type="int"/>
+        <property name="configurationId" column="configuration_id" type="int"/>
+        <property name="date" column="date" type="java.lang.String"/>
+        <property name="score" column="score" type="int"/>
+        <property name="tries" column="tries" type="int"/>
+        <property name="guess" column="guess" type="int"/>
+        <property name="guessedPositions" column="guessed_positions" type="int"/>
+        <property name="isOver" column="is_over" type="boolean"/>
+        <property name="wordStatus" column="word_status" type="java.lang.String"/>
+    </class>
+</hibernate-mapping>
