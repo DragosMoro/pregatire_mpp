@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="org.example.Game" table="games">
+        <id name="id" type="java.lang.Integer" column="id">
+            <generator class="increment"/>
+        </id>
+<!--        int userId, int configurationId, int points, String date, String choosedLetters, String choice, String serverChoice, int tries, boolean over-->
+        <property name="userId" column="user_id" type="int"/>
+        <property name="configurationId" column="configuration_id" type="int"/>
+        <property name="date" column="date" type="java.lang.String"/>
+        <property name="points" column="points" type="int"/>
+        <property name="choosedLetters" column="choosed_letters" type="java.lang.String"/>
+        <property name="choice" column="choice" type="java.lang.String"/>
+        <property name="serverChoice" column="server_choice" type="java.lang.String"/>
+        <property name="tries" column="tries" type="int"/>
+        <property name="over" column="over" type="boolean"/>
+
+    </class>
+</hibernate-mapping>
