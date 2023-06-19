@@ -39,4 +39,13 @@ public class Configuration extends Entity<Integer> implements Serializable {
     public void setMessage(String message) {
         this.message = message;
     }
+
+    @Override
+    public String toString() {
+        return "Configuration{" +
+                "column=" + column +
+                ", row=" + row +
+                ", message='" + message + '\'' +
+                '}';
+    }
 }

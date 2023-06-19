@@ -8,7 +8,7 @@
 
         <property name="dialect">dialect.SQLiteDialect</property>
         <property name="connection.driver_class">org.sqlite.JDBC</property>
-        <property name="connection.url">jdbc:sqlite:game.db</property>
+        <property name="connection.url">jdbc:sqlite:game1.db</property>
         <property name="hibernate.hbm2ddl.auto">update</property>
 
         <!-- Echo all executed SQL to stdout -->

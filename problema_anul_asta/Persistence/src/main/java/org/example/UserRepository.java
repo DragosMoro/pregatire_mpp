@@ -18,8 +18,9 @@ public class UserRepository implements IUserRepository<Integer, User>{
     private JdbcUtils dbUtils;
 
     @Autowired
-    public UserRepository(JdbcUtils dbUtils) {
-        this.dbUtils = dbUtils;
+    public UserRepository(Properties props) {
+        logger.info("Initializing Repository with properties: {} ",props);
+        dbUtils=new JdbcUtils(props);
     }
     @Override
     public Iterable<User> getAll() {
@@ -73,4 +74,30 @@ public class UserRepository implements IUserRepository<Integer, User>{
     public void update(User entity) {
 
     }
+
+    @Override
+    public User getUserByUsername(String username) {
+        logger.traceEntry("find an user by username");
+        Connection connection = dbUtils.getConnection();
+        try (PreparedStatement ps = connection.prepareStatement("select * from users where username = ?")) {
+            ps.setString(1, username);
+            try (ResultSet resultSet = ps.executeQuery()) {
+                if (resultSet.next()) {
+                    int id = resultSet.getInt("id");
+                    String password = resultSet.getString("password");
+                    User user = new User(username, password);
+                    user.setId(id);
+                    logger.traceExit(user);
+                    return user;
+                }
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+
+        }
+        return null;
+    }
+
 }

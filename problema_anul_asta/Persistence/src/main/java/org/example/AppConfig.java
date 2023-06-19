@@ -13,4 +13,12 @@ public class AppConfig {
         props.setProperty("jdbc.url","jdbc:sqlite:game.db");
         return new JdbcUtils(props);
     }
+    @Bean
+    public Properties dbProperties() {
+        Properties props = new Properties();
+        props.setProperty("jdbc.url","jdbc:sqlite:game.db");
+        return props;
+    }
+
+
 }

@@ -9,11 +9,11 @@ public class Game extends Entity<Integer> implements Serializable {
 
     private int tries;
 
-    private StringBuffer proposedPositions = new StringBuffer();
+    private String proposedPositions;
 
     private Boolean isOver = false;
 
-    public Game(int userId, int configurationId, String date, int tries, StringBuffer proposedPositions, Boolean isOver) {
+    public Game(int userId, int configurationId, String date, int tries, String proposedPositions, Boolean isOver) {
         this.userId = userId;
         this.configurationId = configurationId;
         this.date = date;
@@ -55,11 +55,11 @@ public class Game extends Entity<Integer> implements Serializable {
         this.tries = tries;
     }
 
-    public StringBuffer getProposedPositions() {
+    public String getProposedPositions() {
         return proposedPositions;
     }
 
-    public void setProposedPositions(StringBuffer propsedPositions) {
+    public void setProposedPositions(String propsedPositions) {
         this.proposedPositions = propsedPositions;
     }
 

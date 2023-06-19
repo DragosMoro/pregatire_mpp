@@ -1,14 +1,16 @@
 package org.example;
 
-public class ObjectDTO {
+import java.io.Serializable;
+
+public class ObjectDTO implements Serializable {
     private String username;
     private int tries;
     private String message;
-    private StringBuffer proposedPositions = new StringBuffer();
+    private String proposedPositions;
 
 
 
-    public ObjectDTO(int tries, String message, StringBuffer propsedPositions, String username) {
+    public ObjectDTO(int tries, String message, String propsedPositions, String username) {
         this.tries = tries;
         this.message = message;
         this.proposedPositions = propsedPositions;
@@ -34,11 +36,11 @@ public class ObjectDTO {
         this.message = message;
     }
 
-    public StringBuffer getProposedPositions() {
+    public String getProposedPositions() {
         return proposedPositions;
     }
 
-    public void setProposedPositions(StringBuffer propsedPositions) {
+    public void setProposedPositions(String propsedPositions) {
         this.proposedPositions = propsedPositions;
     }
 
