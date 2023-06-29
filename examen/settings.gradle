@@ -1,0 +1,9 @@
+rootProject.name = 'schelet_un_jucator'
+include 'Model'
+include 'Persistence'
+include 'RestServices'
+include 'Client'
+include 'Networking'
+include 'Server'
+include 'Services'
+

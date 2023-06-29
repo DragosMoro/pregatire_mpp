@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd38795f-bce7-48a0-bcf0-396accf8b5da" name="Changes" comment="" />
+    <list default="true" id="fd38795f-bce7-48a0-bcf0-396accf8b5da" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../examen/Model/src/main/java/org/example/Configuration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../examen/Model/src/main/java/org/example/Positions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../examen/Persistence/src/main/java/org/example/ConfigurationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../examen/Persistence/src/main/java/org/example/IConfiguratioRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problema_joc_server_carti/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../problema_joc_server_carti/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problema_joc_server_carti/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../problema_joc_server_carti/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problema_joc_server_carti/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../problema_joc_server_carti/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../problema_joc_server_carti/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../problema_joc_server_carti/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +26,23 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="problema_pozitii" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -22,6 +50,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="2RKjaIQgEYSQGK1GiLxe4P0P3Us" />
   <component name="ProjectViewState">
@@ -33,8 +64,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/pregatire-mpp/problema_pozitii/Networking/src/main/java",
+    "last_opened_file_path": "C:/pregatire-mpp/pregatire_mpp/problema_pozitii",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -67,6 +99,7 @@
       <option name="presentableId" value="Default" />
       <updated>1687005730870</updated>
       <workItem from="1687005732190" duration="15465000" />
+      <workItem from="1687239056438" duration="27000" />
     </task>
     <servers />
   </component>
